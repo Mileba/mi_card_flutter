@@ -28,13 +28,50 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'Android Developer',
+                'ANDROID DEVELOPER',
                 style: TextStyle(
                   color: Colors.teal[100],
                   fontFamily: 'SourceSansPro',
                   fontSize: 20,
                   letterSpacing: 2.5,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+2349051811783',
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20,
+                      color: Colors.teal[900],
+                      letterSpacing: 2.5,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'milebamicheal@gmail.com',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.teal[900],
+                      fontFamily: 'SourceSansPro',
+                    ),
+                  ),
                 ),
               ),
             ],
