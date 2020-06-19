@@ -12,44 +12,34 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-            child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            Column(
-              children: <Widget>[
-                Container(
-                  color: Colors.red,
-                  width: 100,
-                  height: 650,
-                )
-              ],
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  color: Colors.yellow,
-                  width: 100,
-                  height: 100,
+          child: Column(
+            children: <Widget>[
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/avatar.jpg'),
+              ),
+              Text(
+                'Mileba Micheal',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  color: Colors.white,
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
                 ),
-                Container(
-                  color: Colors.greenAccent,
-                  width: 100,
-                  height: 100,
+              ),
+              Text(
+                'Android Developer',
+                style: TextStyle(
+                  color: Colors.teal[100],
+                  fontFamily: 'SourceSansPro',
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold
                 ),
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                Container(
-                  color: Colors.blue,
-                  width: 100,
-                  height: 650,
-                )
-              ],
-            )
-          ],
-        )),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
